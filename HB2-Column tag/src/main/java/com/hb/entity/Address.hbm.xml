@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.hb.entity">
+    <class name="Address">
+    	<id name="addressNo">
+    		<column name="address_no"></column>
+    	</id>
+    	<property name="addressLine1" type="string">
+    		<column name="address_line1"></column>
+    	</property>
+    </class>
+</hibernate-mapping>
