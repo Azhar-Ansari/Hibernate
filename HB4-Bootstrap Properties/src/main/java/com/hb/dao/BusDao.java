@@ -19,7 +19,6 @@ public class BusDao {
 			busNo = (int) session.save(bus);
 			success = true;
 		} finally {
-			session.close();
 			if (transaction != null) {
 				if (success) {
 					transaction.commit();
@@ -27,6 +26,7 @@ public class BusDao {
 					transaction.rollback();
 				}
 			}
+			session.close();
 		}
 		System.out.println("Added bus with no: " + busNo);
 	}
