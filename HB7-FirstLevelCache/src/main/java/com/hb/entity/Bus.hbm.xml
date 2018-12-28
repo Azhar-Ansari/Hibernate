@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.hb.entity">
+    <class name="Bus" table="bus" >
+    	<id name="busNo" column="bus_no"/>
+    	<property name="serviceNo" column="service_no"/>
+    	<property name="seatingCapacity" column="seating_capacity"/>
+    	<property name="fuelType" column="fuel_type"/>
+    </class>
+</hibernate-mapping>
